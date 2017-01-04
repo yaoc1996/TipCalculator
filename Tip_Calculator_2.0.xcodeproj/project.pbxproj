@@ -33,6 +33,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		209295D51E170F92000C6690 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		209295951E16E759000C6690 /* Tip_Calculator_2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tip_Calculator_2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209295981E16E759000C6690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		209295B41E16E75A000C6690 /* Tip_Calculator_2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tip_Calculator_2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209295B81E16E75A000C6690 /* Tip_Calculator_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_Calculator_2_0UITests.swift; sourceTree = "<group>"; };
 		209295BA1E16E75A000C6690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209295E81E17A15D000C6690 /* Tip_Calculator_2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tip_Calculator_2.0.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,7 @@
 		209295971E16E759000C6690 /* Tip_Calculator_2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				209295E81E17A15D000C6690 /* Tip_Calculator_2.0.entitlements */,
 				209295981E16E759000C6690 /* AppDelegate.swift */,
 				2092959A1E16E759000C6690 /* ViewController.swift */,
 				2092959C1E16E75A000C6690 /* Main.storyboard */,
@@ -135,6 +150,7 @@
 				209295911E16E759000C6690 /* Sources */,
 				209295921E16E759000C6690 /* Frameworks */,
 				209295931E16E759000C6690 /* Resources */,
+				209295D51E170F92000C6690 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -193,7 +209,13 @@
 				TargetAttributes = {
 					209295941E16E759000C6690 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LXFJ98PXUW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					209295A81E16E75A000C6690 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -409,7 +431,10 @@
 		209295BE1E16E75A000C6690 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tip_Calculator_2.0/Tip_Calculator_2.0.entitlements;
+				DEVELOPMENT_TEAM = LXFJ98PXUW;
 				INFOPLIST_FILE = Tip_Calculator_2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yao.Tip-Calculator-2-0";
@@ -421,7 +446,10 @@
 		209295BF1E16E75A000C6690 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tip_Calculator_2.0/Tip_Calculator_2.0.entitlements;
+				DEVELOPMENT_TEAM = LXFJ98PXUW;
 				INFOPLIST_FILE = Tip_Calculator_2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yao.Tip-Calculator-2-0";
